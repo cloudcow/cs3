@@ -8,7 +8,7 @@ def attack(team):
 def headshootAttempt(team):
     chance = random.randrange(100)
     if chance > 90:
-        print("{team} did HEADSHOOOOT!!!!!! for {chance} DMG!")
+        print(f"{team} did HEADSHOOOOT!!!!!! for {chance} DMG!")
         return chance
     else:
         return 0
