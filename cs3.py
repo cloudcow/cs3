@@ -66,16 +66,16 @@ while True:
 
 while True:
     time.sleep(2)
+    print(f"Counter-Terrorist health: {totalHealth1} ")
+    print(f"Terrorist health: {totalHealth2}" )
+    print("------------------------------")
     dmg = attack("Counter-Terrorist")
     dmg2 = attack("Terrorist")
     totalHealth1 = totalHealth1 - dmg
     totalHealth2 = totalHealth2 - dmg2
-    print(f"Counter-Terrorist health: {totalHealth1} ")
-    print(f"Terrorist health: {totalHealth2}" )
-    print("------------------------------")
     if totalHealth1 < 1:
         print("Terrorists win! ")
         break
     if totalHealth2 < 1:
         print("Counter-Terrorists win! ")
-    break
+        break
