@@ -22,6 +22,53 @@ def isThereWinner(counterTerroristHealth, terroristHealth):
         return True
     return False
 
+def sukaBlyatEvent():
+    player1 = "MoMo"
+    player2 = "Juice"
+    chance = random.randrange(100)
+    randomPlayerNumber = random.randrange(0, 2)
+    selectedPlayer = ""
+
+    if randomPlayerNumber == 0:
+        selectedPlayer = player1
+    else:
+        selectedPlayer = player2
+
+    if chance > 90:
+        print("------------------------------")
+        print(f"adolf21: SUKA BLYAT {selectedPlayer} SADASDD!!!!! AAAAAAA AAAAAAAAAAAAAAAAA.")
+        time.sleep(0.3)
+        print("adolf21: MY GRANDMA PLAYZ BETTER")
+        time.sleep(0.3)
+        print("adolf21: KICK HIM!!!!!!!!")
+        print("adolf21: KICK HIM!!!!!!!!")
+        time.sleep(0.3)
+        print("adolf21: KIIIIIIIICK HIM!!!!!!!!")
+        time.sleep(0.3)
+        print(f"adolf21: KIIIIIIIICK {selectedPlayer}")
+        time.sleep(0.3)
+        print("Vote by: adolf21")
+        print(f"Kick player: {selectedPlayer} ?")
+
+        votes =  randomPlayerNumber = random.randrange(0, 4)
+
+        print("Vote ends in: 3")
+        time.sleep(0.3)
+        print("Vote ends in: 2")
+        time.sleep(0.3)
+        print("Vote ends in: 1")
+        time.sleep(0.3)
+
+        print(f"Vote ended YES: {votes}, NO: {5 - votes}")
+
+        if votes >= 3:
+            print("Vote passed!")
+            time.sleep(0.3)
+            print(f"{selectedPlayer} has left the game.")
+        if votes < 3:
+            print(f"{selectedPlayer} has survived the vote! Congratz!")
+        print("------------------------------")
+
 dmg = random.randrange(25)
 dmg2 = random.randrange(25)
 counterTerroristHealth = 100
@@ -78,6 +125,7 @@ while True:
     print(f"Counter-Terrorist health: {counterTerroristHealth} ")
     print(f"Terrorist health: {terroristHealth}" )
     print("------------------------------")
+    sukaBlyatEvent()
     dmg = attack("Counter-Terrorist")
     dmg2 = attack("Terrorist")
     counterTerroristHealth = counterTerroristHealth - dmg
